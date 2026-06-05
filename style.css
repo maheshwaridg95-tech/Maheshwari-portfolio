@@ -1,0 +1,445 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F1F5F9;
+    color:#1E293B;
+}
+    line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#0F172A;;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#1E293B;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#0EA5E9;
+}
+
+.menu-btn{
+    display:none;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+     background:linear-gradient(
+    135deg,
+    #0F172A,
+    #1E293B
+    );
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero-content h2{
+    font-size:2rem;
+    min-height:60px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    margin:10px;
+    transition:0.3s;
+}
+
+.primary-btn{
+   background:#38BDF8;
+   color:white;
+   font-weight:600;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:#0EA5E9;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.2rem;
+    color:#0F172A;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-text{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    font-size:1.05rem;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+.progress{
+    width:100%;
+    background:#E2E8F0;
+    height:22px;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress-bar{
+    height:100%;
+    text-align:center;
+    color:white;
+    font-size:0.9rem;
+    line-height:22px;
+    border-radius:20px;
+}
+
+.aws{
+    width:90%;
+    background:#0EA5E9;
+}
+
+.docker{
+    width:85%;
+    background:#2563EB;
+}
+
+.jenkins{
+    width:80%;
+    background:#3B82F6;
+}
+
+.terraform{
+    width:75%;
+    background:#6366F1;
+}
+
+.linux{
+    width:88%;
+    background:#0891B2;
+}
+
+.github{
+    width:85%;
+    background:#0F172A;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section{
+    background:#0F172A;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat-box{
+    background:#1E293B;
+    text-align:center;
+    padding:30px;
+    border-radius:12px;
+}
+
+.stat-box h2{
+    color:#38BDF8;
+    font-size:2.5rem;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(14,165,233,0.2);
+}
+
+.project-card h3{
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+/* =========================
+   CERTIFICATION
+========================= */
+
+.certificate-card{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.contact-grid div{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+.contact-grid i{
+    color:#0EA5E9;
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0F172A;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content h2{
+        font-size:1.4rem;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+}
+.project-btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:10px 18px;
+
+background:#0F172A;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+transition:0.3s;
+
+}
+
+.project-btn:hover{
+
+background:#38BDF8;
+
+}.training-title{
+
+    cursor:pointer;
+
+    color:#0F172A;
+
+    transition:0.3s;
+
+}
+
+.training-title:hover{
+
+    color:#0EA5E9;
+
+}
+
+.training-details{
+
+    display:none;
+
+    margin-top:20px;
+
+    text-align:left;
+
+}
+.training-title{
+    cursor:pointer;
+    color:#0F172A;
+    font-weight:600;
+}
+
+.training-title:hover{
+    color:#0EA5E9;
+}
+
+.training-details{
+    display:none;
+    margin-top:20px;
+}
